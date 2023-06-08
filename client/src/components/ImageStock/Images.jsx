@@ -1,5 +1,7 @@
+import ImageCard from './ImageCard.jsx';
+
 const Images = (props) => {
-  return;
+  return <ImageCard image='' />;
 };
 
 export default Images;
