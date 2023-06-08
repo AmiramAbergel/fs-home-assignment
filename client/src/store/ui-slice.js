@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const uiSlice = createSlice({
-  name: "ui",
-  initialState: { elementIsVisible: false },
+  name: 'ui',
+  initialState: { categoryIsVisible: false },
   reducers: {
     toggle(state) {
-      state.elementIsVisible = !state.elementIsVisible;
-    },
-  },
+      state.categoryIsVisible = !state.categoryIsVisible;
+    }
+  }
 });
 
 export const uiActions = uiSlice.actions;
