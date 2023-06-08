@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import { header } from "./MainHeader.style";
+import { header, navbar } from './MainHeader.style';
 
 const MainHeader = (props) => {
   return (
-    <header css={ header }>
+    <header css={header}>
       <h1>Header</h1>
-      <nav>
+      <nav css={navbar}>
         <ul>
           <li>Next</li>
           <li>Prev</li>

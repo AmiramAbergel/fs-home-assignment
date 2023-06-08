@@ -8,4 +8,21 @@ export const header = css`
   align-items: center;
   justify-content: space-between;
   background-color: #252424;
+  color: #fff;
+`;
+
+export const navbar = css`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  color: #fff;
+
+  & ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+  }
 `;
