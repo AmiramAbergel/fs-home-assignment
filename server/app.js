@@ -1,12 +1,14 @@
-import express from "express";
+import express, { json } from 'express';
+import cors from 'cors';
+import indexRoute from './routes/index.routes.js';
 
 export const app = express(); // Create our Express Application Object
-const port = 3000;
+const PORT = 3000;
+const BASE_URL = '/api/v1';
+app.use(cors());
+app.use(json());
+app.use(BASE_URL, indexRoute); // /api/v1
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening on port ${port}!`);
 });
