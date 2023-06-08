@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const CATEGORY = 'nature';
+const CATEGORY = 'animals';
 const BASE_URL = `https://fs-home-assignment.onrender.com/api/v1/${CATEGORY}`;
 
 const api = axios.create({

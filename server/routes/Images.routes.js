@@ -1,5 +1,6 @@
 import { Router } from 'express';
+import { getImages } from '../controllers/Images.controller.js';
 
 export const imagesRouter = Router();
 
-drugsRouter.route(`/`).get(getImages);
+imagesRouter.route(`/`).get(getImages);
