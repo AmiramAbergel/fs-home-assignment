@@ -1,8 +1,14 @@
 const Category = (props) => {
+  const { item, onCategorySelect } = props;
+
+  const handleClick = () => {
+    onCategorySelect(item); // Inform the parent about the category selection
+  };
+
   return (
-    <li>
+    <li onClick={handleClick}>
       <header>
-        <h2>{props.item}</h2>
+        <h3>{props.item}</h3>
       </header>
     </li>
   );

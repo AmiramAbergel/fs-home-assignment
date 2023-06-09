@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import Modal from '../UI/Modal/Modal.jsx';
 import Category from './Category.jsx';
+import { ImageContext } from '../../hooks/ImageContext.js';
 
 const DUMMY_CATEGORIES = [
   {
@@ -85,12 +87,22 @@ const DUMMY_CATEGORIES = [
 ];
 
 const CategoryList = (props) => {
+  const { setSelectedCategory } = useContext(ImageContext);
+
+  const handleCategorySelect = (categoryTitle) => {
+    setSelectedCategory(categoryTitle);
+  };
+
   return (
     <Modal>
-      <h2>Choose CategoryList</h2>
+      <h2>Choose Category</h2>
       <ul>
         {DUMMY_CATEGORIES.map((category) => (
-          <Category key={category.id} item={category}></Category>
+          <Category
+            key={category.id}
+            item={category.title}
+            onCategorySelect={handleCategorySelect}
+          />
         ))}
       </ul>
     </Modal>

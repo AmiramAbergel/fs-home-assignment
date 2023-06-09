@@ -1,4 +1,5 @@
 const ImageCard = ({ image }) => {
+  console.log(image);
   return (
     <div>
       <img src={image.webformatURL} alt='' />
