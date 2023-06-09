@@ -1,9 +1,11 @@
+/** @jsxImportSource @emotion/react */
 import { useContext } from 'react';
 import Modal from '../UI/Modal/Modal.jsx';
 import Category from './Category.jsx';
 import { ImageContext } from '../../hooks/ImageContext.js';
 import { useDispatch } from 'react-redux';
 import { uiActions } from '../../store/ui-slice.js';
+import { categoryItem, categoryList } from './CategoryList.style.js';
 
 const DUMMY_CATEGORIES = [
   {
@@ -100,13 +102,14 @@ const CategoryList = (props) => {
   return (
     <Modal>
       <h2>Choose Category</h2>
-      <ul>
+      <ul css={categoryList}>
         {DUMMY_CATEGORIES.map((category) => (
-          <Category
-            key={category.id}
-            item={category.title}
-            onCategorySelect={handleCategorySelect}
-          />
+          <li css={categoryItem} key={category.id}>
+            <Category
+              item={category.title}
+              onCategorySelect={handleCategorySelect}
+            />
+          </li>
         ))}
       </ul>
     </Modal>
