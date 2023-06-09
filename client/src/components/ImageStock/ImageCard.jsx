@@ -1,26 +1,19 @@
+import { imageActions } from '../../store/image-slice.js';
+import ImageParameter from './ImageParameter.jsx';
+import { useDispatch, useSelector } from 'react-redux';
+
 const ImageCard = ({ image }) => {
-  console.log(image);
+  const selectedImage = useSelector((state) => state.image.selectedImage);
+  const dispatch = useDispatch();
+
+  const toggleImageHandler = () => {
+    !selectedImage && dispatch(imageActions.selectImage(image));
+  };
+
   return (
-    <div>
+    <div onClick={toggleImageHandler}>
       <img src={image.webformatURL} alt='' />
-      <ul>
-        <li>
-          <strong>Views: </strong>
-          {image.views}
-        </li>
-        <li>
-          <strong>Downloads: </strong>
-          {image.downloads}
-        </li>
-        <li>
-          <strong>Likes: </strong>
-          {image.likes}
-        </li>
-        <li>
-          <strong>comments: </strong>
-          {image.comments}
-        </li>
-      </ul>
+      {selectedImage === image && <ImageParameter image={image} />}
     </div>
   );
 };
