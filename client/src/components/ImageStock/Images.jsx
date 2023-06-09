@@ -1,11 +1,16 @@
+/** @jsxImportSource @emotion/react */
+import { card } from './Image.style.js';
 import ImageCard from './ImageCard.jsx';
 
 const Images = ({ images }) => {
   return (
-    <div>
-      {images &&
-        images.map((image, index) => <ImageCard key={index} image={image} />)}
-    </div>
+    <>
+      {images.map((image) => (
+        <div css={card} key={image.id}>
+          <ImageCard image={image} />
+        </div>
+      ))}
+    </>
   );
 };
 
