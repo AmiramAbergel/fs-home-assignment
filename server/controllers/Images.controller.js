@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const getImages = async (req, res) => {
   const category = req.query.category;
+  console.log(category);
   const BASE_URL = `https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${category}`;
   try {
     const response = await axios.get(BASE_URL);
