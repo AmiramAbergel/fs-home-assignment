@@ -7,6 +7,7 @@ const Backdrop = (props) => {
   const dispatch = useDispatch();
 
   const toggleModalHandler = () => {
+    // Dispatch the toggle action
     dispatch(uiActions.toggle());
   };
 

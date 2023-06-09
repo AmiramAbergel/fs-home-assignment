@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import Modal from '../UI/Modal/Modal.jsx';
 import Category from './Category.jsx';
 import { ImageContext } from '../../hooks/ImageContext.js';
+import { useDispatch } from 'react-redux';
+import { uiActions } from '../../store/ui-slice.js';
 
 const DUMMY_CATEGORIES = [
   {
@@ -88,9 +90,11 @@ const DUMMY_CATEGORIES = [
 
 const CategoryList = (props) => {
   const { setSelectedCategory } = useContext(ImageContext);
+  const dispatch = useDispatch();
 
   const handleCategorySelect = (categoryTitle) => {
     setSelectedCategory(categoryTitle);
+    dispatch(uiActions.toggle()); // close the modal
   };
 
   return (
