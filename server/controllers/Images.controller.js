@@ -10,7 +10,7 @@ export const getImages = async (req, res) => {
 
   try {
     const response = await axios.get(BASE_URL);
-    let data = response.data;
+    let data = response.data.hits;
     console.log('data', data);
     if (sort === 'id') {
       data.sort((a, b) => a.id - b.id);
