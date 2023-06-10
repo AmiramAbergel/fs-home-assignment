@@ -7,11 +7,16 @@ export const ImageProvider = ({ children }) => {
   const [images, setImages] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('animals'); // Default category
   const [currentPage, setCurrentPage] = useState(1); // Track the current page number
+  const [sortOption, setSortOption] = useState('');
 
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await clientApi(selectedCategory, currentPage); // Fetch images from API
+        const response = await clientApi(
+          selectedCategory,
+          sortOption,
+          currentPage
+        ); // Fetch images from API
         setImages(response.data.hits);
       } catch (error) {
         console.error('Failed to fetch images', error);
@@ -19,7 +24,7 @@ export const ImageProvider = ({ children }) => {
     };
 
     fetchImages();
-  }, [selectedCategory, currentPage]);
+  }, [selectedCategory, currentPage, sortOption]);
 
   return (
     <ImageContext.Provider
@@ -28,7 +33,9 @@ export const ImageProvider = ({ children }) => {
         selectedCategory,
         setSelectedCategory,
         currentPage,
-        setCurrentPage
+        setCurrentPage,
+        sortOption,
+        setSortOption
       }}
     >
       {children}

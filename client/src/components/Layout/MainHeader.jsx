@@ -6,7 +6,7 @@ import { header, logo, navbar } from './MainHeader.style';
 import { ImageContext } from '../../hooks/ImageContext.js';
 
 const MainHeader = (props) => {
-  const { setCurrentPage } = useContext(ImageContext);
+  const { setCurrentPage, setSortOption } = useContext(ImageContext);
 
   const prevClickHandler = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
@@ -18,6 +18,13 @@ const MainHeader = (props) => {
   return (
     <header css={header}>
       <h1 css={logo}>Pixabay App</h1>
+      <span>
+        <select onChange={(event) => setSortOption(event.target.value)}>
+          <option value=''>Sort by</option>
+          <option value='id'>ID</option>
+          <option value='date'>Date</option>
+        </select>
+      </span>
       <nav css={navbar}>
         <ul>
           <li>
