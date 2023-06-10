@@ -81,3 +81,9 @@ Check out the live demo of the project:
 
 ![Screenshot 2023-06-10 205300](https://github.com/AmiramAbergel/fs-home-assignment/assets/39462161/7c7e5666-3493-4e17-92ea-29b76eea631d)
 
+
+
+https://github.com/AmiramAbergel/fs-home-assignment/assets/39462161/76c65494-ad14-4d94-b303-bb1748023414
+
+
+
