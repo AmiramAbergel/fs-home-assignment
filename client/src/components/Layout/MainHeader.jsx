@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 import CategoryButton from '../CategoryList/CategoryButton';
 import Button from '../UI/Button/Button.jsx';
-import { header, navbar } from './MainHeader.style';
+import { header, logo, navbar } from './MainHeader.style';
 import { ImageContext } from '../../hooks/ImageContext.js';
 
 const MainHeader = (props) => {
@@ -17,7 +17,7 @@ const MainHeader = (props) => {
 
   return (
     <header css={header}>
-      <h1>Logo</h1>
+      <h1 css={logo}>Pixabay App</h1>
       <nav css={navbar}>
         <ul>
           <li>

@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css } from '@emotion/react';
 
 export const header = css`
   width: 100%;
@@ -11,18 +11,25 @@ export const header = css`
   color: #fff;
 `;
 
+export const logo = css`
+  width: 50%;
+`;
+
 export const navbar = css`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  width: 100%;
   color: #fff;
 
-  & ul{
+  & ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
+  }
 
+  & li {
+    margin: 0 1.5rem;
   }
 `;

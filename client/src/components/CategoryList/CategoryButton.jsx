@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { uiActions } from '../../store/ui-slice.js';
+import Button from '../UI/Button/Button.jsx';
 const CategoryButton = (props) => {
   const dispatch = useDispatch();
 
@@ -8,9 +9,9 @@ const CategoryButton = (props) => {
   };
 
   return (
-    <button onClick={toggleCategoryHandler}>
+    <Button onClick={toggleCategoryHandler}>
       <span>Category</span>
-    </button>
+    </Button>
   );
 };
 
