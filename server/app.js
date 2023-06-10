@@ -10,5 +10,5 @@ app.use(json()); // middleware for parsing incoming json data
 app.use(BASE_URL, indexRoute); // /api/v1
 
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}!`);
+  console.log(`App is live!`);
 });
