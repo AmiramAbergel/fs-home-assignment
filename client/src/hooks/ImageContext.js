@@ -7,7 +7,7 @@ export const ImageProvider = ({ children }) => {
   const [images, setImages] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('animals'); // Default category
   const [currentPage, setCurrentPage] = useState(1); // Track the current page number
-  const [sortOption, setSortOption] = useState('');
+  const [sortOption, setSortOption] = useState('id');
 
   useEffect(() => {
     const fetchImages = async () => {
