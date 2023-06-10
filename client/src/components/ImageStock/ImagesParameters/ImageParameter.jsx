@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import Modal from '../UI/Modal/Modal.jsx';
-import { parameterList } from './ImageParameter.style.js';
+import Modal from "../../UI/Modal/Modal.jsx";
+import { parameterList } from "./ImageParameter.style.js";
 
 const ImageParameter = ({ image }) => {
   return (

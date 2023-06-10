@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import { button } from './Button.style.js';
+import React from "react";
+import { button } from "./Button.style.js";
 
 /*
  * General Button component.

@@ -1,7 +1,10 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
+/*
+  This slice is used to store the selected image from the gallery.
+*/
 const imageSlice = createSlice({
-  name: 'image',
+  name: "image",
   initialState: { selectedImage: null },
   reducers: {
     selectImage(state, action) {
@@ -9,8 +12,8 @@ const imageSlice = createSlice({
     },
     deselectImage(state) {
       state.selectedImage = null;
-    }
-  }
+    },
+  },
 });
 
 export const imageActions = imageSlice.actions;

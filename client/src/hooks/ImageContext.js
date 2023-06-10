@@ -1,13 +1,13 @@
-import React, { createContext, useState, useEffect } from 'react';
-import { clientApi } from '../api/api.js';
+import React, { createContext, useState, useEffect } from "react";
+import { clientApi } from "../api/api.js";
 
 export const ImageContext = createContext();
 
 export const ImageProvider = ({ children }) => {
   const [images, setImages] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('animals'); // Default category
+  const [selectedCategory, setSelectedCategory] = useState("animals"); // Default category
   const [currentPage, setCurrentPage] = useState(1); // Track the current page number
-  const [sortOption, setSortOption] = useState('id');
+  const [sortOption, setSortOption] = useState("id");
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -19,7 +19,7 @@ export const ImageProvider = ({ children }) => {
         ); // Fetch images from API
         setImages(response.data);
       } catch (error) {
-        console.error('Failed to fetch images', error);
+        console.error("Failed to fetch images", error);
       }
     };
 
@@ -35,7 +35,7 @@ export const ImageProvider = ({ children }) => {
         currentPage,
         setCurrentPage,
         sortOption,
-        setSortOption
+        setSortOption,
       }}
     >
       {children}

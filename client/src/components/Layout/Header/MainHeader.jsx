@@ -1,9 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import { useContext } from 'react';
-import CategoryButton from '../CategoryList/CategoryButton';
-import Button from '../UI/Button/Button.jsx';
-import { header, logo, navbar, selectBox } from './MainHeader.style';
-import { ImageContext } from '../../hooks/ImageContext.js';
+import { useContext } from "react";
+
+import { header, logo, navbar, selectBox } from "./MainHeader.style";
+
+import CategoryButton from "../../CategoryList/CategoryBtn/CategoryButton.jsx";
+import Button from "../../UI/Button/Button";
+import { ImageContext } from "../../../hooks/ImageContext";
 
 const MainHeader = (props) => {
   const { currentPage, setCurrentPage, setSortOption } =

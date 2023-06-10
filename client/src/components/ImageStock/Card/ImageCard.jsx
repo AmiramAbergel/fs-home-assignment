@@ -1,6 +1,6 @@
-import { imageActions } from '../../store/image-slice.js';
-import ImageParameter from './ImageParameter.jsx';
-import { useDispatch, useSelector } from 'react-redux';
+import { imageActions } from "../../../store/image-slice.js";
+import ImageParameter from "../ImagesParameters/ImageParameter.jsx";
+import { useDispatch, useSelector } from "react-redux";
 
 const ImageCard = ({ image }) => {
   const selectedImage = useSelector((state) => state.image.selectedImage);
