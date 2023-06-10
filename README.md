@@ -78,3 +78,6 @@ Check out the live demo of the project:
 - [Client Application on Netlify](https://main--flourishing-zuccutto-d4df02.netlify.app/)
 
 - [Server Application on Render](https://fs-home-assignment.onrender.com)
+
+![Screenshot 2023-06-10 205300](https://github.com/AmiramAbergel/fs-home-assignment/assets/39462161/7c7e5666-3493-4e17-92ea-29b76eea631d)
+
