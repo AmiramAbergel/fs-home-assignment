@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { card } from './Image.style.js';
+import { card } from './Images.style.js';
 import ImageCard from './ImageCard.jsx';
 
 const Images = ({ images }) => {

@@ -1,9 +1,11 @@
+/** @jsxImportSource @emotion/react */
 import Modal from '../UI/Modal/Modal.jsx';
+import { parameterList } from './ImageParameter.style.js';
 
 const ImageParameter = ({ image }) => {
   return (
     <Modal>
-      <ul>
+      <ul css={parameterList}>
         <li>
           <strong>Views: </strong>
           {image.views}

@@ -19,12 +19,13 @@ export const card = css`
   }
 
   ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
 
     li {
-      padding: 5px 0;
-      font-size: 0.8em;
+      padding: 50px 0;
+      font-size: 1.3rem;
     }
   }
 `;
