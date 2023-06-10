@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { sortByDate, sortById } from '../utils/sortImages.js';
 
 export const getImages = async (req, res) => {
   const category = req.query.category;
@@ -11,11 +12,11 @@ export const getImages = async (req, res) => {
   try {
     const response = await axios.get(BASE_URL);
     let data = response.data.hits;
-    console.log('data', data);
+
     if (sort === 'id') {
-      data.sort((a, b) => a.id - b.id);
+      data.sort(sortById);
     } else if (sort === 'date') {
-      data.sort((a, b) => new Date(b.webformatURL) - new Date(a.webformatURL));
+      data.sort(sortByDate);
     }
 
     res.status(200).json({

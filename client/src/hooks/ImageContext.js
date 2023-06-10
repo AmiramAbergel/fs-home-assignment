@@ -17,7 +17,7 @@ export const ImageProvider = ({ children }) => {
           sortOption,
           currentPage
         ); // Fetch images from API
-        setImages(response.data.hits);
+        setImages(response.data);
       } catch (error) {
         console.error('Failed to fetch images', error);
       }

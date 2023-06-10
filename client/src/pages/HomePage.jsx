@@ -6,6 +6,7 @@ import { container, grid, header } from './HomePage.style.js';
 
 const HomePage = () => {
   const { images } = useContext(ImageContext);
+  console.log(images);
   return (
     <div css={container}>
       <h1 css={header}>Home Page</h1>

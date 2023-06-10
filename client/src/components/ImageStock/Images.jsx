@@ -3,7 +3,6 @@ import { card } from './Images.style.js';
 import ImageCard from './ImageCard.jsx';
 
 const Images = ({ images }) => {
-  //const firstNineImages = images.slice(0, 9);
   return (
     <>
       {images &&
