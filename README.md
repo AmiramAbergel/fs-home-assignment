@@ -2,7 +2,7 @@
 
 The Pixabay Image Gallery is a sleek, modern image-browsing application built with React.js and Node.js. It retrieves images from the Pixabay API based on user-selected categories and provides user-friendly navigation with pagination and sorting.
 
-![App screenshot](your-app-screenshot-url)
+🎨 🎨 🎨
 
 ## 🛠️ Built With
 
@@ -46,41 +46,26 @@ The project consists of a server and a client-side:
 
 ```bash
 
-git clone https://github.com/<your_username>/Pixabay-Image-Gallery.git
+git clone https://github.com/AmiramAbergel/fs-home-assignment.git
 
 ```
 
-2. Install server dependencies:
+2. Install dependencies
 
 ```bash
 
-cd server && npm install
-
-```
-
-3. Install client dependencies:
-
-```bash
-
-cd client && npm install
+   npm run install-server
+   npm run install-client
 
 ```
 
 ### Running the application
 
-1. Start the server:
+1. Start the server and the client concurrently:
 
 ```bash
 
-cd server && npm start
-
-```
-
-2. Start with the client:
-
-```bash
-
-cd client && npm start
+npm run dev
 
 ```
 
