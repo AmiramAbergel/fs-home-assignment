@@ -9,18 +9,20 @@ export const header = css`
   justify-content: space-between;
   background-color: #252424;
   color: #fff;
+  font-size: 1.5rem;
 `;
 
 export const logo = css`
-  width: 50%;
+  width: 5%;
 `;
 
 export const navbar = css`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   color: #fff;
+  background-color: #252424;
 
   & ul {
     display: flex;
@@ -30,6 +32,16 @@ export const navbar = css`
   }
 
   & li {
-    margin: 0 1.5rem;
+    margin: 0 7rem;
   }
+`;
+
+export const selectBox = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #252424;
+  background-color: #fff;
+  padding: 0 10px;
 `;

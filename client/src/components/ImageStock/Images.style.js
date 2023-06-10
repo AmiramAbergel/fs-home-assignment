@@ -6,13 +6,13 @@ export const card = css`
   justify-content: space-between;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
-  width: 80%;
+  padding: 5px;
+  width: 300px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
   img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
     max-height: 200px;
     object-fit: cover;
     border-radius: 5px;

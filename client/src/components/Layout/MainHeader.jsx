@@ -2,11 +2,12 @@
 import { useContext } from 'react';
 import CategoryButton from '../CategoryList/CategoryButton';
 import Button from '../UI/Button/Button.jsx';
-import { header, logo, navbar } from './MainHeader.style';
+import { header, logo, navbar, selectBox } from './MainHeader.style';
 import { ImageContext } from '../../hooks/ImageContext.js';
 
 const MainHeader = (props) => {
-  const { setCurrentPage, setSortOption } = useContext(ImageContext);
+  const { currentPage, setCurrentPage, setSortOption } =
+    useContext(ImageContext);
 
   const prevClickHandler = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
@@ -16,15 +17,7 @@ const MainHeader = (props) => {
   };
 
   return (
-    <header css={header}>
-      <h1 css={logo}>Pixabay App</h1>
-      <span>
-        <select onChange={(event) => setSortOption(event.target.value)}>
-          <option value=''>Sort by</option>
-          <option value='id'>ID</option>
-          <option value='date'>Date</option>
-        </select>
-      </span>
+    <>
       <nav css={navbar}>
         <ul>
           <li>
@@ -38,7 +31,21 @@ const MainHeader = (props) => {
           </li>
         </ul>
       </nav>
-    </header>
+      <header css={header}>
+        <h1 css={logo}>Pixabay</h1>
+        <h3>Page: {currentPage}</h3>
+        <span>
+          <select
+            css={selectBox}
+            onChange={(event) => setSortOption(event.target.value)}
+          >
+            <option value=''>Sort by</option>
+            <option value='id'>ID</option>
+            <option value='date'>Date</option>
+          </select>
+        </span>
+      </header>
+    </>
   );
 };
 

@@ -9,7 +9,7 @@ const HomePage = () => {
   console.log(images);
   return (
     <div css={container}>
-      <h1 css={header}>Home Page</h1>
+      <h1 css={header}>Stunning royalty-free images & royalty-free stock</h1>
       <div css={grid}>
         <Images images={images} />
       </div>

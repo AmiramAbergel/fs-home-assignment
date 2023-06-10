@@ -7,7 +7,7 @@ export const button = css`
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: all 0.2s ease-in-out;
 
   &:hover {

@@ -9,7 +9,6 @@ export const header = css`
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  text-decoration: underline;
 `;
 
 export const container = css`
@@ -24,6 +23,6 @@ export const grid = css`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  width: 100%;
+  width: 60%;
   justify-items: center;
 `;
