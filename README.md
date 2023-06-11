@@ -8,6 +8,8 @@ The Pixabay Image Gallery is a sleek, modern image-browsing application built wi
 
 - [React.js](https://reactjs.org/)
 
+- [Node.js](https://nodejs.org/)
+
 - [Express.js](https://expressjs.com/)
 
 - [Axios](https://axios-http.com/)
@@ -22,13 +24,12 @@ The Pixabay Image Gallery is a sleek, modern image-browsing application built wi
 
 - **Dynamic Sorting**: Sort images by 'ID' or 'Date'.
 
-- **Responsive Design**: Enjoy a seamless experience on any device thanks to responsive design.
 
 ## 🏗️ Project Structure
 
 The project consists of a server and a client-side:
 
-- **Server**: An Express.js application that handles API requests to Pixabay, performs sorting on the server-side and serves sorted images to the client application.
+- **Server**: A Node.js + Express application that handles API requests to Pixabay, performs sorting on the server-side, and serves sorted images to the client application
 
 - **Client**: A React.js application that displays images, handles category selection, and manages pagination and sorting. Styling is done using the Emotion library.
 
@@ -78,3 +79,12 @@ Check out the live demo of the project:
 - [Client Application on Netlify](https://main--flourishing-zuccutto-d4df02.netlify.app/)
 
 - [Server Application on Render](https://fs-home-assignment.onrender.com)
+
+![Screenshot 2023-06-10 205300](https://github.com/AmiramAbergel/fs-home-assignment/assets/39462161/7c7e5666-3493-4e17-92ea-29b76eea631d)
+
+
+
+https://github.com/AmiramAbergel/fs-home-assignment/assets/39462161/76c65494-ad14-4d94-b303-bb1748023414
+
+
+
