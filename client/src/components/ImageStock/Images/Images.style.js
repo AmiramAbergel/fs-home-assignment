@@ -1,4 +1,5 @@
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
+
 export const card = css`
   display: flex;
   flex-direction: column;
@@ -11,8 +12,7 @@ export const card = css`
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
   img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     max-height: 200px;
     object-fit: cover;
     border-radius: 5px;
@@ -26,6 +26,16 @@ export const card = css`
     li {
       padding: 50px 0;
       font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+
+    ul li {
+      padding: 20px 0;
+      font-size: 1rem;
     }
   }
 `;

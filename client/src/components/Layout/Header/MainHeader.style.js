@@ -10,10 +10,20 @@ export const header = css`
   background-color: #252424;
   color: #fff;
   font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 0 5%;
+    font-size: 1.2rem;
+  }
 `;
 
 export const logo = css`
   width: 5%;
+
+  @media (max-width: 768px) {
+    width: 10%;
+    font-size: 1.5rem;
+  }
 `;
 
 export const navbar = css`
@@ -34,6 +44,17 @@ export const navbar = css`
   & li {
     margin: 0 7rem;
   }
+
+  @media (max-width: 768px) {
+    & ul {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    & li {
+      margin: 1rem 0;
+    }
+  }
 `;
 
 export const selectBox = css`
@@ -44,4 +65,8 @@ export const selectBox = css`
   color: #252424;
   background-color: #fff;
   padding: 0 10px;
+
+  @media (max-width: 768px) {
+    padding: 0 5px;
+  }
 `;

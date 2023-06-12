@@ -9,6 +9,10 @@ export const header = css`
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 1.5em;
+
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
 `;
 
 export const container = css`
@@ -25,12 +29,25 @@ export const grid = css`
   grid-gap: 20px;
   width: 60%;
   justify-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+  }
 `;
 
 export const spinner = css`
   display: inline-block;
   width: 80px;
   height: 80px;
+
   &:after {
     content: " ";
     display: block;
@@ -49,6 +66,16 @@ export const spinner = css`
       100% {
         transform: rotate(360deg);
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+
+    &:after {
+      width: 48px;
+      height: 48px;
     }
   }
 `;
