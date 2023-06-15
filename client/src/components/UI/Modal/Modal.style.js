@@ -1,4 +1,4 @@
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 export const backdrop = css`
   position: fixed;
@@ -15,7 +15,7 @@ export const modal = css`
   top: 14vh;
   left: 5%;
   width: 78%;
-  height: 80%;
+  height: auto;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;

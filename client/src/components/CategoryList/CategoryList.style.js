@@ -1,11 +1,11 @@
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 export const categoryList = css`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   list-style: none;
 `;
 

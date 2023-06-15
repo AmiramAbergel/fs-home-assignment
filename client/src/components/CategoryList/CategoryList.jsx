@@ -8,7 +8,7 @@ import { uiActions } from "../../store/ui-slice.js";
 import { categoryItem, categoryList } from "./CategoryList.style.js";
 import Category from "./Category/Category.jsx";
 
-const DUMMY_CATEGORIES = [
+const CATEGORIES = [
   {
     id: "c1",
     title: "backgrounds",
@@ -104,7 +104,7 @@ const CategoryList = (props) => {
     <Modal>
       <h2>Choose Category</h2>
       <ul css={categoryList}>
-        {DUMMY_CATEGORIES.map((category) => (
+        {CATEGORIES.map((category) => (
           <li css={categoryItem} key={category.id}>
             <Category
               item={category.title}

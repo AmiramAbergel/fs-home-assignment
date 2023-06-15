@@ -22,9 +22,10 @@ export const card = css`
     display: flex;
     list-style-type: none;
     padding: 0;
+    align-items: flex-start;
 
     li {
-      padding: 50px 0;
+      padding: 30px 0;
       font-size: 1.3rem;
     }
   }
